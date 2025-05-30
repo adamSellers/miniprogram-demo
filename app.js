@@ -22,8 +22,8 @@ app.use(cookieParser());
 
 // --- Serve your API routes (these would be your actual backend endpoints) ---
 // For this demo, these can remain basic or empty, as data is mocked on frontend.
-app.use("/", indexRouter);
-app.use("/users", usersRouter);
+// app.use("/", indexRouter);
+// app.use("/users", usersRouter);
 // You would add more API routes here, e.g., app.use('/api/events', eventsRouter);
 // ----------------------------------------------------------------------------
 
