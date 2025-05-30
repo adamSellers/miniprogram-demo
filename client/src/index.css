@@ -1,0 +1,29 @@
+/* Basic CSS resets and global styles */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif; /* Using Inter font from Google Fonts CDN */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  height: 100vh; /* Ensure the root element takes full viewport height */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Prevent #root scroll, let main-content handle it */
+}
+
+/* Specific styles for the app container and main content */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevent container scroll */
+}
+
+.main-content {
+  flex-grow: 1;
+  overflow-y: auto; /* Enable scrolling for content area */
+  padding-bottom: 80px; /* Space for the fixed tab bar */
+  -webkit-overflow-scrolling: touch; /* Smoother scrolling on iOS */
+}
